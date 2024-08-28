@@ -1,4 +1,28 @@
 - Key Concepts in HTML
+  Elements, written using angle bracket (< >)
+  Open tag <p>
+  Closing tag </p>
+
+  Non-replaced elements: paragraph, header, list,
+  Replaced and Void elements: self-closing elements. cannot contain text content or nested elements
+  br, col, embed, hr, img, input, link, meta, source, track, wbr
+  Replaced elements:
+  video, picture, object, iframe
+  Void:
+  base, link, param, meta
+
+  Attributes:
+  <a href='#register' target='_self'>Registration</a>
+  provide information about the element.
+  only appear in the opening tag.
+  define behavior, linkages, and functionality
+  quotes is always recommended
+  some are case-sensitive
+
+  Appearance:
+  is the realm of CSS
+  some have a semantic meaing like <stong> and <em>
+
 - Structure
 - Metadata
 - Semantic
