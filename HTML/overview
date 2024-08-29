@@ -77,6 +77,13 @@
   ***
 
 - Semantic
+  Over 100 HTML elements exists'
+  use HTML elements to structure content based on element meaning not appearance
+  using semantic elements helps accessibility
+  using the ROLE attribute you can give any element a role
+
+  ***
+
 - Headings and section
 - Attributes
 - Basics
