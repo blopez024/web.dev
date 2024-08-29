@@ -81,10 +81,34 @@
   use HTML elements to structure content based on element meaning not appearance
   using semantic elements helps accessibility
   using the ROLE attribute you can give any element a role
+  tags have semantic meaning, HTML should be used to structure content
 
   ***
 
 - Headings and section
+  think about the purpose of the content
+  When <header> is top level, its the site banner or landmark role
+    <nav> element identifies content as navigation
+  <footer> should contain the site information on every page such as copyright, contact info, and links to privacy and cookies
+
+  Holy Grail Layout:
+  Header, two sidebars, and a footer
+
+  <main> element identifies the main content in the document. 
+  There should one be one per page
+
+  <aside> is for content that is indirectly or tangentially related to the document.
+
+  <article> represents a complete, or self-contained section of content
+
+  <section> element is used to encompass generic standalone sections
+
+  Headings
+  There are six section headings, with h1 being the highest or most important and h6 being the lowest
+  Don't use heading to make text bold or large, use CSS instead
+
+  ***
+
 - Attributes
 - Basics
 - Links
