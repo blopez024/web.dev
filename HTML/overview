@@ -68,6 +68,14 @@
   ***
 
 - Metadata
+  Components you almost always find in the <head> tag
+
+  http-equiv can be used to refresh page, but you shouldn't
+
+  open graph meta tags are used to control how social media sites display content links
+
+  ***
+
 - Semantic
 - Headings and section
 - Attributes
