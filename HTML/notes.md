@@ -1,6 +1,6 @@
 # Overview of HTML
 
-## Elements
+### Elements
 
 - Elements are written using angle brackets (`< >`).
 - Example:
@@ -42,51 +42,52 @@
 
 ### Structure
 
-- HTML documents start with a type declaration and include the `<html>` root element, which is the parent of `<head>` and `<body>`.
+- HTML documents begin with a type declaration (`<!DOCTYPE html>`) and include the `<html>` root element.
+- The `<html>` element is the parent of both `<head>` and `<body>`.
 - Example:
-
-```html
-<!DOCTYPE html>
-<html lang="en-US"></html>
-```
+  ```html
+  <!DOCTYPE html>
+  <html lang="en-US"></html>
+  ```
+- The lang attribute is typically a two- or three-letter ISO code followed by the region code (e.g., `en-US`).
 
 ### Head and Body Elements
 
 - The `<head>` and `<body>` tags are nested between the opening and closing `<html>` tags.
 - The first element in the `<head>` should be the character set:
 
-```html
-<meta charset="utf-8" />
-```
+  ```html
+  <meta charset="utf-8" />
+  ```
 
--The document title is displayed in the browser tab, list of open windows, history, and search results.
+- The document title is displayed in the browser tab, list of open windows, history, and search results.
 
 ### Viewport
 
--The viewport meta tag helps with site responsiveness:
+- The viewport meta tag helps with site responsiveness:
 
-```html
-<meta name="viewport" content="width=device-width" />
-```
+  ```html
+  <meta name="viewport" content="width=device-width" />
+  ```
 
 ### Styles and Links
 
--The `<head>` section is where styles are included for your HTML document, using either the `<link>`, `<style>`, or style attributes.
--It is recommended to use the `<link>` tag for linking external stylesheets, as it enhances both developer experience and site performance.
+- The `<head>` section is where styles are included for your HTML document, using either the `<link>`, `<style>`, or style attributes.
+- It is recommended to use the `<link>` tag for linking external stylesheets, as it enhances both developer experience and site performance.
 
 #### Other Uses of `<link>`
 
 - The `<link>` tag also creates relationships between the HTML document and external resources.
   Example of a link to a favicon:
 
-```html
-<link
-  rel="icon"
-  sizes="16x16 32x32 48x48"
-  type="image/png"
-  href="/images/mlwicon.png"
-/>
-```
+  ```html
+  <link
+    rel="icon"
+    sizes="16x16 32x32 48x48"
+    type="image/png"
+    href="/images/mlwicon.png"
+  />
+  ```
 
 ##### Alternate and Canonical Links
 
@@ -100,76 +101,86 @@
 - The `<script>` tag is used to include JavaScript files.
 - Place scripts at the bottom of the document to ensure elements are loaded before the script runs.
 - Script loading options:
-  - **Default**: render -> download JS -> execute JS -> render
-  - **Defer**: render -> download JS -> execute JS
-  - **Async**: render -> download JS -> pause -> execute JS -> render
+  - **Default**: `render -> download JS -> execute JS -> render`
+  - **Defer**: `render -> download JS -> execute JS`
+  - **Async**: `render -> download JS -> pause -> execute JS -> render`
 
 ---
 
-- Metadata
-  Components you almost always find in the <head> tag
+# Metadata
 
-http-equiv can be used to refresh page, but you shouldn't
+- Metadata components are commonly found in the `<head>` tag.
+- Example of metadata:
 
-open graph meta tags are used to control how social media sites display content links
+  ```html
+  <meta http-equiv="refresh" content="30" />
+  ```
 
----
+- The `http-equiv` attribute can refresh the page, but this practice is generally discouraged.
 
-- Semantic
-  Over 100 HTML elements exists'
-  use HTML elements to structure content based on element meaning not appearance
-  using semantic elements helps accessibility
-  using the ROLE attribute you can give any element a role
-  tags have semantic meaning, HTML should be used to structure content
+### Open Graph Meta Tags
 
-  ***
-
-- Headings and section
-think about the purpose of the content
-When <header> is top level, its the site banner or landmark role
-  <nav> element identifies content as navigation
-<footer> should contain the site information on every page such as copyright, contact info, and links to privacy and cookies
-
-Holy Grail Layout:
-Header, two sidebars, and a footer
-
- <main> element identifies the main content in the document.
- There should one be one per page
-
- <aside> is for content that is indirectly or tangentially related to the document.
-
- <article> represents a complete, or self-contained section of content
-
- <section> element is used to encompass generic standalone sections
-
-Headings
-There are six section headings, with h1 being the highest or most important and h6 being the lowest
-Don't use heading to make text bold or large, use CSS instead
+- Open Graph meta tags control how social media platforms display content when a link is shared.
 
 ---
 
-- Attributes
-  make HTML so powerful
-  are space-separated names and name/value pairs
-  define behavior, linkages, and functionality
-  quoting is always recommended
-  some attributes are case-sensitive
-  boolean attributes are always TRUE
-  when toggling b/t true and false remove the attribute with JavaScript
+# Semantic HTML
 
-30 Global Attributes, can be set on any HTML element
-id, is used to define a unique identifier for an element
-make it id first character a letter, and use only ASCII letters, digits, \_, and -
-id should be unique to the document
+### Semantic Elements
 
-fragment identifier is an anchor or bookmark to that element
-when the user clicks to any link, the element scrolls into view
+- Over 100 HTML elements exist, and they should be used to structure content based on meaning, not appearance.
+- Using semantic elements improves accessibility.
+- Example: Using the `role` attribute, you can give any element a specific role, helping assistive technologies better understand the content.
 
-class provides an additional way of targeting elements with CSS and JavaScript, but serve no purpose in HTML
-style attribute enables applying inline styles
+---
 
-Custom Attributes
-create any custom attribute by adding the data- prefix
+# Heading and sections
+
+- Before adding content, consider its purpose.
+- When the `<header>` element is top-level, it serves as the site banner or landmark.
+
+  - The `<nav>` element identifies navigation content.
+  - The `<footer>` should contain site information, such as copyright, contact info, and links to privacy policies or cookies. It is typically displayed on every page.
+
+### Holy Grail Layout
+
+- This common layout structure includes a header, two sidebars, main content, and a footer.
+
+### Key Elements
+
+- `<main>`: Identifies the primary content in the document. There should only be one <main> element per page.
+- `<aside>`: Contains content that is indirectly related to the main content.
+- `<article>`: Represents a complete or self-contained section of content.
+- `<section>`: Used for grouping related content within the page.
+
+### Headings
+
+- There are six section headings (`<h1>` to` <h6>`), with 1 being the highest level of importance and `<h6>` the lowest.
+- Do not use headings purely for styling purposes, such as making text bold or large—use CSS for that.
+
+---
+
+# Attributes
+
+### Global Attributes
+
+- `id`: Provides a unique identifier for an element. The first character should be a letter, and only ASCII letters, digits, underscores (`_`), and hyphens (`-`) should be used. The `id` should be unique within the document.
+
+- Fragment Identifier: Acts as an anchor or bookmark to an element. When clicked, it scrolls the element into view.
+
+- Class: Offers another way to target elements with CSS and JavaScript. It serves no intrinsic purpose in HTML.
+
+- Style: Allows for inline CSS to be applied directly to the element.
+
+### Boolean Attributes
+
+- Boolean attributes are always considered `true`. When toggling between true and false, you can remove the attribute entirely with JavaScript.
+
+### Custom Attributes
+
+- You can create custom attributes by adding the `data-` prefix.
+
+---
 
 - Basics
 - Links
@@ -185,7 +196,3 @@ create any custom attribute by adding the data- prefix
 - Inline text
 - Details and summary
 - Dialog
-
-```
-
-```
