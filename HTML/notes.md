@@ -1,4 +1,4 @@
-# Key Concepts in HTML
+# Overview of HTML
 
 ## Elements
 
@@ -21,7 +21,7 @@
   - These self-close and do not contain nested elements or text content.
   - Examples: `<br>`, `<col>`, `<embed>`, `<hr>`, `<img>`, `<input>`, `<link>`, `<meta>`, `<source>`, `<track>`, `<wbr>`
 
-## Attributes
+### Attributes
 
 - Attributes provide information about the element and appear only in the opening tag.
 - They define behavior, linkages, and functionality. Using quotes for attribute values is recommended.
@@ -31,54 +31,78 @@
   <a href="#register" target="_self">Registration</a>
   ```
 
-Appearance:
-is the realm of CSS
-some have a semantic meaning like <strong> and <em>
+### Appearance:
+
+- The appearance of HTML elements is controlled by CSS.
+- Certain tags, such as `<strong>` and `<em>`, have semantic meaning that implies visual styling and emphasis.
 
 ---
 
-- Structure
-Documents include a type declaration and the <html> root element.
-Its the parent of <head> and <body>
-First thing to add <!DOCTYPE html>. Its a special kind of node
-lang attribute is two or three letter ISO followed by region
-<html lang='en-US'>
+# Document Structure
 
-head and body is nested between the opening and closing <html> tags
-first element in head should be the charset character
-you should use UTF-8
+### Structure
 
-   <meta charset='utf-8'>
+- HTML documents start with a type declaration and include the `<html>` root element, which is the parent of `<head>` and `<body>`.
+- Example:
 
-Document title, are displayed in:
-browser tab, list of open windows, history, search results
+```html
+<!DOCTYPE html>
+<html lang="en-US"></html>
+```
 
-Viewport, helps site responsiveness
+### Head and Body Elements
 
-   <meta name='viewport' content='width=device-width'>
+- The `<head>` and `<body>` tags are nested between the opening and closing `<html>` tags.
+- The first element in the `<head>` should be the character set:
 
-The <head> is where you include styles for your HTML: <link>, <style>, style attributes
-The <link> tag is preferred as it is good for developer experience and site performance
+```html
+<meta charset="utf-8" />
+```
 
-Other uses of <link>
-it is used to create relationships between the HTML document and external resources
+-The document title is displayed in the browser tab, list of open windows, history, and search results.
 
-Favicon
-is a small icon that appears on the browser tab
-generally to the left
+### Viewport
 
-   <link rel='icon' sizes='16x16 32x32 48x48' type='image/png' href='/images/mlwicon.png'>
+-The viewport meta tag helps with site responsiveness:
 
-Alternate and Canonical
-alternate is used represent alternative sites (Translations: French / Spanish)
-canonical is used when several alternatives exist and search engines need the authoritative source
+```html
+<meta name="viewport" content="width=device-width" />
+```
 
-Scripts
-<scripts> tag is used to include scripts.
-add script to the bottom to ensure elements exist before running script
-Default: render - download js - execute js - render
-Defer: render / download js - execute js
-Async: render / download js - pause / execute js - render
+### Styles and Links
+
+-The `<head>` section is where styles are included for your HTML document, using either the `<link>`, `<style>`, or style attributes.
+-It is recommended to use the `<link>` tag for linking external stylesheets, as it enhances both developer experience and site performance.
+
+#### Other Uses of `<link>`
+
+- The `<link>` tag also creates relationships between the HTML document and external resources.
+  Example of a link to a favicon:
+
+```html
+<link
+  rel="icon"
+  sizes="16x16 32x32 48x48"
+  type="image/png"
+  href="/images/mlwicon.png"
+/>
+```
+
+##### Alternate and Canonical Links
+
+- Alternate: Used to represent alternative versions of a site (e.g., translations in French or Spanish).
+- Canonical: Used to specify the authoritative source when several alternatives exist, often for SEO purposes.
+
+---
+
+# Scripts
+
+- The `<script>` tag is used to include JavaScript files.
+- Place scripts at the bottom of the document to ensure elements are loaded before the script runs.
+- Script loading options:
+  - **Default**: render -> download JS -> execute JS -> render
+  - **Defer**: render -> download JS -> execute JS
+  - **Async**: render -> download JS -> pause -> execute JS -> render
 
 ---
 
