@@ -110,6 +110,25 @@
   ***
 
 - Attributes
+  make HTML so powerful
+  are space-separated names and name/value pairs
+  define behavior, linkages, and functionality
+  quoting is always recommended
+  some attributes are case-sensitive
+  boolean attributes are always TRUE
+  when toggling b/t true and false remove the attribute with JavaScript
+
+  30 Global Attributes, can be set on any HTML element
+  id, is used to define a unique identifier for an element
+  make it id first character a letter, and use only ASCII letters, digits, \_, and -
+  id should be unique to the document
+
+  fragment identifier is an anchor or bookmark to that element
+  when the user clicks to any link, the element scrolls into view
+
+  class provides an additional way of targeting elements with CSS and JavaScript, but serve no purpose in HTML
+  style attribute enables applying inline styles
+
 - Basics
 - Links
 - Lists
