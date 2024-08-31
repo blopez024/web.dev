@@ -1,80 +1,95 @@
-- Key Concepts in HTML
-  Elements, written using angle bracket (< >)
-  Open tag <p>
-  Closing tag </p>
+# Key Concepts in HTML
 
-  Non-replaced elements: paragraph, header, list,
-  Replaced and Void elements: self-closing elements. cannot contain text content or nested elements
-  br, col, embed, hr, img, input, link, meta, source, track, wbr
-  Replaced elements:
-  video, picture, object, iframe
-  Void:
-  base, link, param, meta
+## Elements
 
-  Attributes:
-  <a href='#register' target='_self'>Registration</a>
-  provide information about the element.
-  only appear in the opening tag.
-  define behavior, linkages, and functionality
-  quotes is always recommended
-  some are case-sensitive
+- Elements are written using angle brackets (`< >`).
+- Example:
+  - Opening tag: `<p>`
+  - Closing tag: `</p>`
 
-  Appearance:
-  is the realm of CSS
-  some have a semantic meaning like <strong> and <em>
+### Non-Replaced Elements
 
-  ***
+- Elements that cannot contain text content or nested elements.
+- Examples: `<p>`, `<header>`, `<list>`
+
+### Replaced and Void Elements
+
+- **Replaced Elements**:
+  - These can contain alternative content, such as media.
+  - Examples: `<video>`, `<picture>`, `<object>`, `<iframe>`
+- **Void Elements**:
+  - These self-close and do not contain nested elements or text content.
+  - Examples: `<br>`, `<col>`, `<embed>`, `<hr>`, `<img>`, `<input>`, `<link>`, `<meta>`, `<source>`, `<track>`, `<wbr>`
+
+## Attributes
+
+- Attributes provide information about the element and appear only in the opening tag.
+- They define behavior, linkages, and functionality. Using quotes for attribute values is recommended.
+- Some attributes are case-sensitive.
+- Example:
+  ```html
+  <a href="#register" target="_self">Registration</a>
+  ```
+
+Appearance:
+is the realm of CSS
+some have a semantic meaning like <strong> and <em>
+
+---
 
 - Structure
-  Documents include a type declaration and the <html> root element.
-  Its the parent of <head> and <body>
-  First thing to add <!DOCTYPE html>. Its a special kind of node
-  lang attribute is two or three letter ISO followed by region
-  <html lang='en-US'>
+Documents include a type declaration and the <html> root element.
+Its the parent of <head> and <body>
+First thing to add <!DOCTYPE html>. Its a special kind of node
+lang attribute is two or three letter ISO followed by region
+<html lang='en-US'>
 
-  head and body is nested between the opening and closing <html> tags
-  first element in head should be the charset character
-  you should use UTF-8
-    <meta charset='utf-8'>
+head and body is nested between the opening and closing <html> tags
+first element in head should be the charset character
+you should use UTF-8
 
-  Document title, are displayed in:
-  browser tab, list of open windows, history, search results
+   <meta charset='utf-8'>
 
-  Viewport, helps site responsiveness
-    <meta name='viewport' content='width=device-width'>
+Document title, are displayed in:
+browser tab, list of open windows, history, search results
 
-  The <head> is where you include styles for your HTML: <link>, <style>, style attributes
-  The <link> tag is preferred as it is good for developer experience and site performance
+Viewport, helps site responsiveness
 
-  Other uses of <link>
-  it is used to create relationships between the HTML document and external resources
+   <meta name='viewport' content='width=device-width'>
 
-  Favicon
-  is a small icon that appears on the browser tab
-  generally to the left
-    <link rel='icon' sizes='16x16 32x32 48x48' type='image/png' href='/images/mlwicon.png'>
+The <head> is where you include styles for your HTML: <link>, <style>, style attributes
+The <link> tag is preferred as it is good for developer experience and site performance
 
-  Alternate and Canonical
-  alternate is used represent alternative sites (Translations: French / Spanish)
-  canonical is used when several alternatives exist and search engines need the authoritative source
+Other uses of <link>
+it is used to create relationships between the HTML document and external resources
 
-  Scripts
-  <scripts> tag is used to include scripts.
-  add script to the bottom to ensure elements exist before running script
-  Default: render - download js - execute js - render
-  Defer: render / download js - execute js
-  Async: render / download js - pause / execute js - render
+Favicon
+is a small icon that appears on the browser tab
+generally to the left
 
-  ***
+   <link rel='icon' sizes='16x16 32x32 48x48' type='image/png' href='/images/mlwicon.png'>
+
+Alternate and Canonical
+alternate is used represent alternative sites (Translations: French / Spanish)
+canonical is used when several alternatives exist and search engines need the authoritative source
+
+Scripts
+<scripts> tag is used to include scripts.
+add script to the bottom to ensure elements exist before running script
+Default: render - download js - execute js - render
+Defer: render / download js - execute js
+Async: render / download js - pause / execute js - render
+
+---
 
 - Metadata
   Components you almost always find in the <head> tag
 
-  http-equiv can be used to refresh page, but you shouldn't
+http-equiv can be used to refresh page, but you shouldn't
 
-  open graph meta tags are used to control how social media sites display content links
+open graph meta tags are used to control how social media sites display content links
 
-  ***
+---
 
 - Semantic
   Over 100 HTML elements exists'
@@ -86,28 +101,28 @@
   ***
 
 - Headings and section
-  think about the purpose of the content
-  When <header> is top level, its the site banner or landmark role
-    <nav> element identifies content as navigation
-  <footer> should contain the site information on every page such as copyright, contact info, and links to privacy and cookies
+think about the purpose of the content
+When <header> is top level, its the site banner or landmark role
+  <nav> element identifies content as navigation
+<footer> should contain the site information on every page such as copyright, contact info, and links to privacy and cookies
 
-  Holy Grail Layout:
-  Header, two sidebars, and a footer
+Holy Grail Layout:
+Header, two sidebars, and a footer
 
-  <main> element identifies the main content in the document. 
-  There should one be one per page
+ <main> element identifies the main content in the document.
+ There should one be one per page
 
-  <aside> is for content that is indirectly or tangentially related to the document.
+ <aside> is for content that is indirectly or tangentially related to the document.
 
-  <article> represents a complete, or self-contained section of content
+ <article> represents a complete, or self-contained section of content
 
-  <section> element is used to encompass generic standalone sections
+ <section> element is used to encompass generic standalone sections
 
-  Headings
-  There are six section headings, with h1 being the highest or most important and h6 being the lowest
-  Don't use heading to make text bold or large, use CSS instead
+Headings
+There are six section headings, with h1 being the highest or most important and h6 being the lowest
+Don't use heading to make text bold or large, use CSS instead
 
-  ***
+---
 
 - Attributes
   make HTML so powerful
@@ -118,16 +133,19 @@
   boolean attributes are always TRUE
   when toggling b/t true and false remove the attribute with JavaScript
 
-  30 Global Attributes, can be set on any HTML element
-  id, is used to define a unique identifier for an element
-  make it id first character a letter, and use only ASCII letters, digits, \_, and -
-  id should be unique to the document
+30 Global Attributes, can be set on any HTML element
+id, is used to define a unique identifier for an element
+make it id first character a letter, and use only ASCII letters, digits, \_, and -
+id should be unique to the document
 
-  fragment identifier is an anchor or bookmark to that element
-  when the user clicks to any link, the element scrolls into view
+fragment identifier is an anchor or bookmark to that element
+when the user clicks to any link, the element scrolls into view
 
-  class provides an additional way of targeting elements with CSS and JavaScript, but serve no purpose in HTML
-  style attribute enables applying inline styles
+class provides an additional way of targeting elements with CSS and JavaScript, but serve no purpose in HTML
+style attribute enables applying inline styles
+
+Custom Attributes
+create any custom attribute by adding the data- prefix
 
 - Basics
 - Links
@@ -143,3 +161,7 @@
 - Inline text
 - Details and summary
 - Dialog
+
+```
+
+```
