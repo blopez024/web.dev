@@ -102,8 +102,8 @@
 - Place scripts at the bottom of the document to ensure elements are loaded before the script runs.
 - Script loading options:
   - **Default**: `render -> download JS -> execute JS -> render`
-  - **Defer**: `render -> download JS -> execute JS`
-  - **Async**: `render -> download JS -> pause -> execute JS -> render`
+  - **Defer**: `render & download JS -> execute JS`
+  - **Async**: `render & download JS -> pause & execute JS -> render`
 
 ---
 
@@ -182,17 +182,49 @@
 
 ---
 
-- Basics
-- Links
+# Text Basics
+
+- Heading Elements: HTML provides six heading elements (`<h1>` through `<h6>`), with `<h1>` being the most important and `<h6>` the least. Screen reader users often rely on headings to navigate content.
+
+- Quotes and Citations:
+
+  - `<blockquote>`: Defines a block-level quote.
+  - `<q>`: Defines an inline quote.
+  - `<cite>`: Refers to the title of a work (e.g., a book or article), _not_ the author.
+
+- Line Breaks:
+
+  - `<br>`: Inserts a line break within a block of text.
+
+- HTML Entities: Represent special characters using escape sequences or named entities (e.g., `&amp;` for `&`).
+
+---
+
+# Links
+
+---
+
 - Lists
+
+---
+
 - Navigation
+
+---
+
 - Tables
+
+---
+
 - Forms
+
+---
+
 - Images
 - Audio and Video
 - Template, slot, and shadow
 - HTML APIs
 - Focus
-- Inline text
+- Other inline text elements
 - Details and summary
 - Dialog
