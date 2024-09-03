@@ -202,6 +202,37 @@
 
 # Links
 
+- Anchor Tag (`<a>`): Used to create hyperlinks when paired with the `href` attribute. Links are the foundation of the internet.
+
+- Elements That Create Links: Links can be created using the following elements: `<a>`, `<area>`, `<form>`, and `<link>`.
+
+- `href` Attribute: Used to link to locations within the current page, other pages, or external sites. It can also be used for downloading files or sending emails.
+
+  - Examples:
+    - `href="#top"`: Link to an element with the `id="top"`.
+    - `href="mailto:hal9000@gmail.com"`: Open an email client to send an email.
+    - `href="tel:2131112222"`: Initiate a phone call.
+    - Downloadable Resources: Add the `download` attribute to an `<a>` tag to specify a file for download, e.g., `<a href="image.svg" download="name.svg">`.
+
+- Browsing Contexts:
+
+  - `_self`: Opens the link in the current window (default).
+  - `_blank`: Opens the link in a new tab.
+  - `_parent`: Opens the link in the parent frame (useful for nested objects like iframes).
+  - `_top`: Opens the link in the topmost frame.
+  - Note: Opening multiple `_blank` links creates multiple tabs; to reuse the same tab, provide a "tab context" (using the `target` attribute).
+
+- **MIME** Types: MIME types are advisory and inform the user about the type of document being opened. Providing context about the linked resource helps users manage their expectations.
+
+- Tracking Link Clicks: To track user interactions, the `ping` attribute can be used to send data to secure URLs when a link is clicked. This attribute contains a space-separated list of URLs to ping.
+
+- User Experience:
+
+  - Provide clear information about the linked resources so users know what they are clicking on.
+  - Ensure that links are visually distinct from surrounding text.
+  - Include focus styles for accessibility.
+  - Avoid placing interactive content (e.g., buttons or forms) inside a link.
+
 ---
 
 - Lists
@@ -221,10 +252,31 @@
 ---
 
 - Images
+
+---
+
 - Audio and Video
+
+---
+
 - Template, slot, and shadow
+
+---
+
 - HTML APIs
+
+---
+
 - Focus
+
+---
+
 - Other inline text elements
+
+---
+
 - Details and summary
+
+---
+
 - Dialog
