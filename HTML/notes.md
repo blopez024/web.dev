@@ -235,11 +235,48 @@
 
 ---
 
-- Lists
+# Lists
+
+- List Types: HTML offers three types of lists:
+
+  - Ordered List (`<ol>`): Displays items in a numbered or lettered sequence.
+  - Unordered List (`<ul>`): Displays items with bullet points.
+  - Description List (`<dl>`): Contains terms (`<dt>`) and their descriptions (`<dd>`).
+
+- List Items:
+
+  - `<li>`: Represents a list item. It must be nested within an `<ol>`, `<ul>`, or `<menu>`.
+  - It can have a single attribute (`value`), typically an integer, that can be used when the list is nested to set a specific starting point.
+
+- Ordered List Attributes:
+
+  - `type`: Specifies the type of marker (numbers, letters, etc.) used in the list.
+  - `reversed`: Reverses the order of the list items.
+  - `start`: Specifies the starting point for the list numbering.
+
+- Styling Lists:
+
+  - The bullet or numbering style of lists can be defined using the `list-style-type` property in CSS or the `type` attribute for ordered lists.
+
+- Description List:
+
+  - A description list (`<dl>`) contains description terms (`<dt>`) and their corresponding descriptions (`<dd>`), forming term-description pairs.
 
 ---
 
-- Navigation
+# Navigation
+
+- Types of Navigation:
+
+  - Local Navigation: Links to other pages within the same website, including named anchors within text.
+  - Breadcrumb Navigation: Shows the path the user followed to reach the current page.
+  - Table of Contents: Provides an outline of a page’s sections, allowing users to navigate to different parts of the page.
+  - Site Map: Contains hierarchical links to every page on a website.
+  - Global Navigation: Links to the top-level pages of the website, typically present on every page.
+
+- Best Practices: Ensure users can navigate to any page on your site with minimal clicks without overwhelming them with too many options.
+
+- HTML Element: The `<nav>` element is the most appropriate tag for defining sections of navigation within a webpage.
 
 ---
 
