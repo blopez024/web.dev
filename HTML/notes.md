@@ -280,7 +280,37 @@
 
 ---
 
-- Tables
+# Tables
+
+- When to Use Tables: Use tables to present data that needs to be compared, sorted, calculated, or cross-referenced. For non-tabular content, use lists and CSS for layout.
+
+- Table Structure:
+
+  - `<table>`: Wraps the entire table content.
+  - Inside the table:
+    - `<thead>`: Defines the table header.
+    - `<tbody>`: Contains the main body of the table.
+    - `<tfoot>`: Optionally contains the table footer.
+    - `<tr>`: Defines a row.
+    - `<th>`: Represents a header cell.
+    - `<td>`: Represents a data cell.
+
+- Captions:
+
+  - `<caption>`: The preferred method to provide a name or title for the table. It helps users immediately understand the table’s purpose.
+
+- Clear Headers and Captions: Data tables should include clear headers and captions for accessibility and clarity.
+
+- Merging Cells:
+
+  - Use the colspan attribute to merge two or more adjacent cells horizontally.
+
+- Styling Tables:
+
+  - `<colgroup>`: Defines groups of columns for styling purposes.
+  - Drawing Order: Tables are drawn in the following order: table, column groups, columns, row groups, rows, and finally, cells.
+
+- Responsiveness: Tables are not responsive by default and require additional CSS or JavaScript to adapt to different screen sizes.
 
 ---
 
